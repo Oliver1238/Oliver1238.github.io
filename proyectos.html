@@ -8,45 +8,41 @@
     <style>
         .project-img { height: 300px; object-fit: cover; border-radius: 15px; width: 100%; }
         .bg-custom { background-color: #f8f9fa; }
-          body {
-        /* Gradiente más moderno sobre tu imagen de fondo */
-        background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(56, 189, 248, 0.4)), url('imagenes/Fondo.jfif');
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: 'Poppins', sans-serif; /* Tipografía personalizada */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #0f172a; /* Fondo oscuro igual al inicio */
+        color: #f8fafc;
     }
 
-    .nav-masthead .nav-link {
-        color: #e2e8f0;
-        transition: 0.3s;
+    /* Hero section personalizada */
+    .bg-light { 
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important; 
+        color: white;
     }
 
-    /* Cambio de color del elemento activo y hover */
-    .nav-masthead .active {
-        color: #38bdf8 !important;
-        border-bottom-color: #38bdf8 !important;
+    /* Personalización de tarjetas de proyectos */
+    .rounded-4 { 
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .rounded-4:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
     }
 
-    .profile-img {
-        width: 160px;
-        height: 160px;
-        object-fit: cover;
-        border: 5px solid rgba(56, 189, 248, 0.5); /* Borde translúcido */
-        box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
-    }
-
-    .btn-info {
+    .bg-dark { background-color: #1e293b !important; }
+    .bg-primary { background-color: #0ea5e9 !important; }
+    
+    /* Botones coherentes */
+    .btn-primary {
         background-color: #38bdf8;
         border: none;
         color: #0f172a;
-        transition: transform 0.2s;
+        font-weight: 600;
     }
-
-    .btn-info:hover {
-        transform: scale(1.05); /* Efecto de pulso al pasar el mouse */
-        background-color: #0ea5e9;
-    }
-
     </style>
 </head>
 <body>
